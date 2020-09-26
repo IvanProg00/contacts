@@ -1,0 +1,19 @@
+{
+  "name": "contacts",
+  "version": "1.0.0",
+  "description": "Rest API Contacts App",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Ivan Gavrilov <gavrilovivan2000@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

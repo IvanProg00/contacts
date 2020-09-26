@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  app:
+    build: ./
+    volumes:
+      - ./app:/usr/src/app
+    ports:
+      - 8080:8080
+    environment:
+      PORT: 8080
+  db:
+    image: mongo
+    volumes:
+      - ./database:/data/db
+    restart: unless-stopped
+    ports:
+      - 27017:27017
